@@ -1,7 +1,9 @@
+
+<body>
 <?php
-    $ab = 4;
-    $ac = 5;
-    $bc = 4;
+    $ab =  $_POST['ab'];
+    $ac = $_POST['ac'];
+    $bc = $_POST['bc'];
     $lados = "";
     
     if( $ab == $ac && $ac == $bc && $ab == $bc) {
@@ -14,9 +16,9 @@
     
     echo "<h2 align= center>$lados</h2>";
     
-    $anga = 90;
-    $angb = 90;
-    $angc = 90;
+    $anga = $_POST['anga'];
+    $angb = $_POST['angb'];
+    $angc = $_POST['angc'];
     $angulo = "";
     
     if( $anga < 90 && $angb < 90 && $angc < 90 ) {
@@ -28,3 +30,7 @@
     }
     
     echo "<h2 align= center>$angulo</h2>";
+    
+?>
+</boy>
+</html>
