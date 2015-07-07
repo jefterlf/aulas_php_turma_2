@@ -14,16 +14,16 @@
     
     echo "<h2 align= center>$lados</h2>";
     
-    $anga = 80;
-    $angb = 60;
-    $angc = 40;
+    $anga = 90;
+    $angb = 90;
+    $angc = 90;
     $angulo = "";
     
     if( $anga < 90 && $angb < 90 && $angc < 90 ) {
         $angulo = "Triângulo Acutângulo!";
     }elseif( $anga > 90 && $angb > 90 && $angc > 90 ) {
         $angulo = "Triângulo Obtusângulo!";
-    }elseif( $anga == 90 && $angb == 90 && angc == 90 ){
+    }elseif( $anga == 90 && $angb == 90 && $angc == 90 ){
         $angulo = "Triângulo Reto!";
     }
     
