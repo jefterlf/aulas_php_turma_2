@@ -2,15 +2,33 @@
 <html lang="pt-br">
     <head>
         <title>Formulário de Triângulos</title>
-        <link href="style.css" />
+        <link rel=”stylesheet” type=”text/css” href=”style.css” />
     </head>
     <body>
-        <form action="trabalho triangulos.php">
-            <label>Insira um valor para o Lado AB:</label>
+        <form action="trabalho triangulos.php" method="post">
+            <h2 align="center"> Formulário de Triângulos </h2>
+            <label>Insira um valor para o lado AB:</label>
             <input type="text" name="ab" id="ab" placeholder="Ex: 15" />
-            <label>Insira um</label>
+            </br>
+            <label>Insira um valor para o lado AC:</label>
+            <input type="text" name="ac" id="ac" placeholder="Ex: 5" />
+            </br>
+            <label>Insira um valor para o lado BC:</label>
+            <input type="text" name="bc" id="bc" placeholder="Ex: 55" />
+            </br>
+            <label>Insira um valor para o lado Ângulo A:</label>
+            <input type="text" name="anga" id="anga" placeholder="Ex: 90" />
+            </br>
+            <label>Insira um valor para o lado Ângulo B:</label>
+            <input type="text" name="angb" id="angb" placeholder="Ex: 120" />
+            </br>
+            <label>Insira um valor para o lado Ângulo C:</label>
+            <input type="text" name="angc" id="angc" placeholder="Ex: 180" />
+            </br>
+            <input type="submit" name="enviar" value="enviar" />
         </form>
         <?php
+        if(isset($_POST['enviar'])){
             $ab = $_POST['ab'];
             $ac = $_POST['ac'];
             $bc = $_POST['bc'];
@@ -40,7 +58,7 @@
             }
 
             echo "<h2 align= center>$angulo</h2>";
-
+        }
         ?>
     </body>
 </html>
