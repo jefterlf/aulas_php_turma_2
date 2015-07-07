@@ -6,7 +6,7 @@
     
     if( $ab == $ac && $ac == $bc && $ab == $bc) {
         $lados = "Triângulo Equilátero!";
-    }elseif( $ab == $ac ) {
+    }elseif( ($ab == $ac && $ab != $bc && $ac != $bc) || ( $ab == $bc && $ab != $ac && $bc != $ac ) || ( $ac == $bc && $ac != $ab && $bc != $ab ) ) {
         $lados = "Triângulo Isóceles!";
     }elseif( $ab != $ac && $ac != $bc && $ab != $bc ) {
         $lados = "Triângulo Escaleno!";
