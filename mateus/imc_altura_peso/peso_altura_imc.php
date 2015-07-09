@@ -34,7 +34,7 @@
                     $mensagem = "com excesso de peso.";
                 }
 
-                if( $imc > 30 || ($imc <= 35 && $imc > 30 )){
+                if( $imc > 30 || ($imc <= 35 && $imc > 30 ) ){
                     $mensagem = "no nível de obesidade.";
                 }
 
