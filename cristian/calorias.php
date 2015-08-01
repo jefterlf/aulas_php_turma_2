@@ -10,7 +10,7 @@
 
         <table border ="10" align="center">
             <tr>
-                <td></td>
+                <td> </td>
                 <td>prato</td>
                 <td>Sobremesa</td>
                 <td>Bebida</td>
