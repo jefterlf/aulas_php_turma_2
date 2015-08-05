@@ -13,7 +13,13 @@
         </form>
         <?php
              if(isset($_POST['enviar'])){
-                 
+                 $numeroA = $_POST['numeroA'];
+                 $numeroB = $_POST['numeroB'];
+                 if($numeroA > $numeroB){
+                     echo "$numeroB $numeroA";
+                 }elseif($numeroA < $numeroB){
+                     echo "$numeroA $numeroB";
+                 }
              }
         ?>
     </body>
