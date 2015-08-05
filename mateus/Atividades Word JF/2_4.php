@@ -28,7 +28,7 @@
                  }elseif($resultadoAC > $resultadoBD){
                      echo "A+C é maior que B*D.";
                  }elseif($resultadoAC < $resultadoBD){
-                     echo "A+C é maior que B*D.";
+                     echo "A+C é menor que B*D.";
                  }
              }
         ?>
