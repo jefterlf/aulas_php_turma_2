@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Igual - maior ou menor</title>
+        <title>negativo - positivo - igual a zero</title>
     </head>
     <body>
         <form method="post" action="2_3.php">
