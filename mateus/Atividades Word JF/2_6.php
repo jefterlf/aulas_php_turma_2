@@ -25,9 +25,9 @@
                  $nota3 = $_POST['nota3'];
                  $nota4 = $_POST['nota4'];
                  $resultadofianl = ($nota1 + $nota2 + $nota3 + $nota4)/4;
-                 if($resultadofianl < 7){
+                 if($resultadofianl >= 7){
                      echo "Aluno foi $nome aprovado.";
-                 }else{
+                 }elseif($resultadofianl < 7){
                      echo "Aluno foi $nome reprovado";
                  }
              }
