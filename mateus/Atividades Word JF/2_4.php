@@ -23,6 +23,13 @@
                  $numeroD = $_POST['numeroD'];
                  $resultadoAC = $numeroA + $numeroC;
                  $resultadoBD = $numeroB * $numeroD;
+                 if($resultadoAC == $resultadoBD){
+                     echo "A+C é igual que B*D.";
+                 }elseif($resultadoAC > $resultadoBD){
+                     echo "A+C é maior que B*D.";
+                 }elseif($resultadoAC < $resultadoBD){
+                     echo "A+C é maior que B*D.";
+                 }
              }
         ?>
     </body>
