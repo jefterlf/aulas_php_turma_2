@@ -11,7 +11,14 @@
         </form>
         <?php
              if(isset($_POST['enviar'])){
-                 
+                 $salario = $_POST['salario'];
+                 if($salario <= 300){
+                     $reajuste = (($salario * 50)/100)+$salario;
+                     echo "Seu salário reajustado é $reajuste";
+                 }elseif($salario > 300){
+                     $reajuste = (($salario * 30)/100)+$salario;
+                     echo "Seu salário reajustado é $reajuste";
+                 }
              }
         ?>
     </body>
