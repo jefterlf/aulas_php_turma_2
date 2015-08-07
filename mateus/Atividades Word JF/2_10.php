@@ -14,12 +14,12 @@
                 $numero = $_POST['numero'];
                 $cont = 1;
                 echo $numero. "! = ";
-                while($cont <= $numero){
-                    $fatorial = $cont * $numero;
-                    echo "$fatorial ";
-                    $cont++;
+                for($i = $numero; $i > 1; $i--){
+                    $cont *= $numero;
+                    $numero--;
                 }
-          }      
+                echo "$cont";
+          }
         ?>
     </body>
 </html>
