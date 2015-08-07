@@ -15,10 +15,8 @@
           if(isset($_POST['enviar'])){   
                 $numero1 = $_POST['numero1'];
                 $numero2 = $_POST['numero2'];
-                $cont = $numero1;
-                while($numero1 == $numero2){
-                    $cont++;
-                    echo "$cont";
+                for($i = $numero1 + 1 ; $i < $numero2 ; $i++){
+                    echo "$i ";
                 }
           }
         ?>
