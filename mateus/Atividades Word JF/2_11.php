@@ -18,6 +18,11 @@
                 for($i = $numero1 + 1 ; $i < $numero2 ; $i++){
                     echo "$i ";
                 }
+                if($numero2 < $numero1){    
+                    for($i = $numero1 - 1 ; $i > $numero2 ; $i--){
+                        echo "$i ";
+                    }
+                }    
           }
         ?>
     </body>
