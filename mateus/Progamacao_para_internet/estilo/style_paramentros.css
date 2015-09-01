@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Signika);
+
+#numero {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    box-shadow: 2px 2px 4px #696969;
+    -webkit-box-shadow: 2px 2px 4px #696969;
+    border: 2px dashed #7FFF00;
+    background: #F0FFFF;
+    width: 200px;
+    font-family: 'Signika', arial;
+}
+
+#number {
+    font-family: 'Signika', arial;
+    color: #473C8B;
+    font-size: 18px;
+}
+
+#enviar {
+    height: 30px;
+    width: 60px;
+    font-family: 'Signika', arial;
+    font-size: 15px;
+    color: #473C8B;
+    background: #F0FFFF;
+    border: 3px solid #4EEE94;
+    box-shadow: 2px 2px 4px #696969;
+    -webkit-box-shadow: 2px 2px 4px #696969;
+}

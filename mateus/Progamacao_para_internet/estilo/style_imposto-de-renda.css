@@ -5,7 +5,8 @@
     color: darkorange;
 }
 
-input[type=text]{     
+.inputF[type=text]{     
+    font-family: 'Raleway', arial;
     border-radius:4px;
     -moz-border-radius:4px;
     -webkit-border-radius:4px;
@@ -17,11 +18,15 @@ input[type=text]{
     width:150px
 }
 
-input[type=text]:hover, textarea:hover{ 
-         background: #ffffff; border:1px solid #990000;
+.inputF[type=text]:hover, textarea:hover{ 
+         background: #F5FFFA; border:1px solid #990000;
 }
 
-input[type=submit]{
-        background:#006699;
-        color:#ffffff;
+.inputF[type=submit]{
+        font-family: 'Raleway', arial;
+        background:#87CEFA;
+        color:#191970;
+        border-radius:4px;
+        -moz-border-radius:4px;
+        -webkit-border-radius:4px;
 }

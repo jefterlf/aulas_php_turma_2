@@ -2,10 +2,11 @@
 <html lang="pt-br">
     <head>
         <title>Ano bissexto</title>
+        <link rel="stylesheet" type="text/css" href="estilo/style_ano-bissexto.css" />
     </head>
     <body>
         <form method="post" action="ano_bissexto.php">
-            <label>Insira o ano:</label>
+            <label id="insira">Insira o ano:</label>
             <input type="text" name="ano" id="ano"/>
             <input type="submit" name="enviar" id="enviar"/>
         </form>

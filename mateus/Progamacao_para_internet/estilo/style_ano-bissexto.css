@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+#ano {
+    -webkit-border-radius: 8px;
+    -webkit-box-shadow: 2px 2px 4px #698B69;
+    border: 2px solid #8B008B;
+    background: #E0FFFF;
+    font-family: 'Lobster', arial;
+}
+
+#insira {
+    font-family: 'Lobster', arial;
+    font-size: 22px;
+    color: #68228B;
+}
+
+#enviar {
+    border: none;
+    -webkit-border-radius: 3px;
+    -webkit-box-shadow: 2px 2px 4px #698B69;
+    background: #FF0000;
+    font-family: 'Lobster', arial;
+    font-size: 20px;
+    color: #FFD700;
+}

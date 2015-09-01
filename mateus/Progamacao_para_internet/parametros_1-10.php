@@ -2,10 +2,11 @@
 <html lang="pt-br">
     <head>
         <title>entre 1 e 10</title>
+        <link rel="stylesheet" type="text/css" href="estilo/style_paramentros.css" />
     </head>
     <body>
         <form method="post" action="parametros_1-10.php">
-            <label>Número:</label>
+            <label id="number">Número:</label>
             <input type="text" name="numero" id="numero" />
             <input type="submit" name="enviar" id="enviar" />
         </form>

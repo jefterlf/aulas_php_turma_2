@@ -49,6 +49,11 @@
                 $impostoR = $resulIR - 122.78;
                 echo "Foi reduzido do seu salário $impostoR";
             }
+            
+            if ( ($rendaM == 0) || ($rendaM == "") ){
+                echo "<br>";
+                echo "<h2>Preencha o campo Renda Mensal.</br>";
+            }
         }
         ?>
     </body>

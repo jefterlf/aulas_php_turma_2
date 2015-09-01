@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+
+label {
+    font-family: 'Amatic SC', arial;
+    font-size: 25px;
+    color: darkorange;
+}
+
+#enviar {
+    box-shadow: 2px 2px 4px #000;
+    border-radius: 3em;
+    border: none;
+    background: #000;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.input_form {
+    box-shadow: 2px 2px 4px #000;
+    border-radius: 2em;
+    border: none;
+    font-family: sans-serif;
+}
+
+#cor-azul {
+    font-size: 30px;
+    color: blue;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+#cor-vermelha {
+    font-size: 30px;
+    color: red;
+    font-family: 'Amatic SC', sans-serif;
+}
