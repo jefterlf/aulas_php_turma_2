@@ -25,23 +25,23 @@
                     $imc = round($peso / ($altura * $altura));
                     
                     if($imc < 20  ){
-                        return "abaixo do peso.";
-                    }        
+                        return "abaixo do peso. <br> Seu imc é $imc.";
+                    }
 
                     if( $imc >= 20 || ($imc <=25 && $imc >=20) ){
-                        return "normal.";
+                        return "normal. <br> Seu imc é $imc.";
                     }
 
                     if( $imc > 25 || ($imc <= 30 && $imc > 25 ) ){
-                        return "com excesso de peso.";
+                        return "com excesso de peso. <br> Seu imc é $imc.";
                     }
 
                     if( $imc > 30 || ($imc <= 35 && $imc > 30 ) ){
-                        return "no nível de obesidade.";
+                        return "no nível de obesidade. <br> Seu imc é $imc.";
                     }
 
                     if( $imc > 35 ){
-                        return "no nível de obesidade mórbida.";
+                        return "no nível de obesidade mórbida. <br> Seu imc é $imc.";
                     }
                 }
                 
