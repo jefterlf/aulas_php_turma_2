@@ -6,3 +6,14 @@ h2 {
 label {
     font-family: arial;
 }
+
+input{
+    border: solid 1px darkorange;
+    border-radius: 0.5em;
+    font-family: arial;
+}
+
+#enviar{
+    background-color: black;
+    color: darkorange;
+}

@@ -20,30 +20,34 @@
                 $nome = $_POST['nome'];
                 $altura = $_POST['altura'];
                 $peso = $_POST['peso'];
-                $imc = round($peso / ($altura * $altura));
+                
+                function imc ($peso, $altura){
+                    $imc = round($peso / ($altura * $altura));
+                    
+                    if($imc < 20  ){
+                        return "abaixo do peso.";
+                    }        
 
-                if($imc < 20  ){
-                    $mensagem = "abaixo do peso.";
-                }        
+                    if( $imc >= 20 || ($imc <=25 && $imc >=20) ){
+                        return "normal.";
+                    }
 
-                if( $imc >= 20 || ($imc <=25 && $imc >=20) ){
-                    $mensagem = "normal.";
+                    if( $imc > 25 || ($imc <= 30 && $imc > 25 ) ){
+                        return "com excesso de peso.";
+                    }
+
+                    if( $imc > 30 || ($imc <= 35 && $imc > 30 ) ){
+                        return "no nível de obesidade.";
+                    }
+
+                    if( $imc > 35 ){
+                        return "no nível de obesidade mórbida.";
+                    }
                 }
-
-                if( $imc > 25 || ($imc <= 30 && $imc > 25 ) ){
-                    $mensagem = "com excesso de peso.";
-                }
-
-                if( $imc > 30 || ($imc <= 35 && $imc > 30 ) ){
-                    $mensagem = "no nível de obesidade.";
-                }
-
-                if( $imc > 35 ){
-                    $mensagem = "no nível de obesidade mórbida.";
-                }
-
+                
+                $cauculo_imc = imc($peso, $altura);
                 echo "<h2 align='center'>";
-                echo "O IMC de $nome está $mensagem";
+                echo "O IMC de $nome está $cauculo_imc";
                 echo "</h2>";
             }
         ?>
