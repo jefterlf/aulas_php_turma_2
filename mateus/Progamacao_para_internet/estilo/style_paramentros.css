@@ -28,3 +28,13 @@
     box-shadow: 2px 2px 4px #696969;
     -webkit-box-shadow: 2px 2px 4px #696969;
 }
+
+body {
+    font-family: 'Signika', arial;
+}
+
+table {
+    border: solid 2px black;
+    width: 100px;
+    border-color: #4EEE94;
+}

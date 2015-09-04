@@ -1,17 +1,17 @@
 <?php
-    function fatorial ($numero)
+    function fator ($number)
     {
-        if ($numero < 0)
+        if ($number < 0)
         {
             return -1;
         }
-        if ($numero <= 1)
+        if ($number <= 1)
         {
             return 1;
         }
-        return $numero*fatorial($numero-1);
+        return $number * fator ($number - 1);
     }
-    echo    "O fatorial de 3 é " . fatorial(3);
-    echo    "<br>O fatorial de 4 é " . fatorial(4);
-    echo    "<br>O fatorial de 5 é " . fatorial(5);
+    echo "O fatorial de 3 é " . fator(3);
+    echo "<br>O fatorial de 4 é " . fator(4);
+    echo "<br>O fatorial de 5 é " . fator(5);
 ?>

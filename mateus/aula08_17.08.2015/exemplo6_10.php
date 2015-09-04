@@ -1,11 +1,11 @@
 <?php
-    function teste ($valor)
+    function algo ($dado)
     {
-        if ($valor != 0)
+        if ($dado != 0)
         {
-            echo "Foi chamada a funão teste passando o valor $valor <br>";
-            teste ($valor - 1);
+            echo "Foi chamada a função teste passando o valor $dado <br>";
+            algo ($dado - 1);
         }
     }
-    teste (7);
+    algo (14);
 ?>
