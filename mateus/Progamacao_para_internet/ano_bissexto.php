@@ -14,11 +14,14 @@
         if(isset($_POST['enviar'])){
             $ano = $_POST['ano'];
             
-            if( ($ano % 4 == 0) || ($ano % 400 == 0) ){
-                echo "Este ano é bissexto.";
-            }else{
-                echo "Este não é bissexto.";
+            function ano_bissexto ($ano){
+                if( ($ano % 4 == 0) || ($ano % 400 == 0) ){
+                    echo "Este ano é bissexto.";
+                }else{
+                    echo "Este não é bissexto.";
+                }
             }
+            ano_bissexto ($ano);
         }
         ?>
     </body>
