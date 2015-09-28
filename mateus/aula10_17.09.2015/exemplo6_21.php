@@ -45,7 +45,25 @@
             }
         }
         function Potenciacao ($n1, $n2) {
-            
+            $this->resultado = pow($n1,$n2);
+            print "Resultado da potenciação: $n1 elevado a $n2 = ".$this->resultado;
+        }
+    }
+    $obj = new Calculo();
+    if(isset($_POST["operacao"]) && isset($_POST["n1"]) && isset($_POST["n2"])) {
+        $operacao = $_POST["operacao"];
+        $n1 = $_POST["n1"];
+        $n2 = $_POST["n2"];
+        if($operacao=="adicao") {
+            $obj->Adicao($n1,$n2);
+        }elseif($operacao=="subtracao") {
+            $obj->Subtracao($n1,$n2);
+        }elseif($operacao=="multiplicacao") {
+            $obj->Multiplicacao($n1,$n2);
+        }elseif($operacao=="divisao") {
+            $obj->Divisao($n1,$n2);
+        }elseif($operacao=="potenciacao") {
+            $obj->Potenciacao($n1,$n2);
         }
     }
 ?>
